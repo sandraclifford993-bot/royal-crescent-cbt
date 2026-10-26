@@ -1,0 +1,6 @@
+{
+  "name": "ROYAL CRESENT CBT CENTRE",
+  "description": "An offline Computer-Based Test (CBT) system for Royal Cresent school with instant voice feedback, practice and exam modes, and local question management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

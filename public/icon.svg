@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532d" />
+      <stop offset="100%" stop-color="#052e16" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#facc15" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+    <linearGradient id="lightGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86efac" />
+      <stop offset="100%" stop-color="#4ade80" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Base Badge -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  
+  <!-- Outer Gold Border -->
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="none" stroke="url(#gold)" stroke-width="8" opacity="0.85"/>
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#86efac" stroke-width="3" stroke-dasharray="8 8" opacity="0.6"/>
+
+  <!-- Crescent Shape -->
+  <g filter="url(#shadow)">
+    <!-- Crescent Moon -->
+    <path d="M 235 110 C 160 120 105 185 105 260 C 105 345 175 415 260 415 C 315 415 365 385 390 340 C 350 355 305 350 270 330 C 215 300 195 235 215 175 C 225 150 240 130 260 115 C 251 112 243 111 235 110 Z" fill="url(#gold)" />
+    
+    <!-- Open Book in Center -->
+    <g transform="translate(230, 220)">
+      <!-- Left Page -->
+      <path d="M 25 35 C -15 25 -65 30 -85 45 L -85 110 C -65 95 -15 90 25 100 Z" fill="#fffdf0" stroke="#166534" stroke-width="4"/>
+      <!-- Right Page -->
+      <path d="M 25 35 C 65 25 115 30 135 45 L 135 110 C 115 95 65 90 25 100 Z" fill="#fffdf0" stroke="#166534" stroke-width="4"/>
+      <!-- Center Spine -->
+      <line x1="25" y1="35" x2="25" y2="102" stroke="#14532d" stroke-width="5" stroke-linecap="round"/>
+      <!-- Page Lines -->
+      <line x1="-70" y1="60" x2="-10" y2="52" stroke="#86efac" stroke-width="3" stroke-linecap="round"/>
+      <line x1="-70" y1="75" x2="-10" y2="67" stroke="#86efac" stroke-width="3" stroke-linecap="round"/>
+      <line x1="60" y1="60" x2="120" y2="68" stroke="#86efac" stroke-width="3" stroke-linecap="round"/>
+      <line x1="60" y1="75" x2="120" y2="83" stroke="#86efac" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Graduation Cap / Torch Star Accent -->
+    <polygon points="256,125 264,145 285,148 270,162 274,183 256,172 238,183 242,162 227,148 248,145" fill="url(#gold)" />
+    <circle cx="340" cy="180" r="10" fill="#86efac" />
+    <circle cx="160" cy="190" r="8" fill="#fef08a" />
+  </g>
+
+  <!-- Text Badge -->
+  <rect x="76" y="420" width="360" height="48" rx="24" fill="#fef08a" filter="url(#shadow)"/>
+  <text x="256" y="452" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="22" fill="#14532d" text-anchor="middle" letter-spacing="3">CBT CENTRE</text>
+</svg>
